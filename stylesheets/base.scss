@@ -22,6 +22,8 @@ $font-banner-preco-destaque: 147.52/16;
 body{
   font-family: $roboto;
   font-size: 100%;
+  max-width: 1350px;
+  margin: auto;
 }
 header, nav{
   width: 92.6%;
@@ -63,13 +65,7 @@ ul{
     text-align: right;
   }
 }
-li{
-  display: block;
-  font-size: $font-m;
-  float: left;
-  width: 14.28%;
-  text-align: center;
-}
+
 // -------------------------------------------------textos------------------------------------------------
 
 a{
@@ -81,8 +77,18 @@ a[role= "button"]{
   border: 1px solid black;
   height: 65px;
 }
+li{
+  list-style: none;
+}
 // --------------------------------------------classes----------------------------------------------------
 
+.nav-li{
+  display: block;
+  font-size: $font-m;
+  float: left;
+  width: 14.28%;
+  text-align: center;
+}
 .containers-header{
   height: 50px;
 }
@@ -91,6 +97,7 @@ a[role= "button"]{
 }
 .banner-container{
   background-image: url('../images/banner-bg.png');
+  background-position: center;
   display: flex;
   height: 379px;
 }
@@ -139,4 +146,38 @@ a[role= "button"]{
               }
 
         }
+}
+.div-icons{
+  background-image: url('../images/icons-bg.png');
+  background-size: contain;
+  background-repeat: no-repeat;
+  height: 43px;
+  margin-top: 2rem;
+  margin-left: 6.59%;
+  width: 93.41%;
+}
+.icons-aside{
+  height: 43px;
+  margin-top: -2.6rem;
+    .ul-icons{
+      padding-left: 12.5%;
+        li~li{
+          margin-left: 14%;
+        }
+        & :nth-child(3){
+          margin-left: 15%;
+          margin-right: 3%;
+        }
+    }
+    li{
+      font-size: #{(12.8/16)}+rem;
+      padding-top: 0.5rem;
+      text-align: left;
+      width: auto;
+        strong{
+          font-size: #{17.09/16}+rem;
+        }
+
+    }
+
 }
