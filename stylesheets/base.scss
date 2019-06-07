@@ -1,14 +1,19 @@
 /*body width:1350px*/
 @import url('https://fonts.googleapis.com/css?family=Roboto&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Montserrat&display=swap');
+
 
 /*-------------------------------------variaveis----------------------------------------------------------*/
 $roboto: 'Roboto', sans-serif;
+$mont: 'Montserrat', sans-serif;
 $font-s: 0.75rem;  //12px
 $font-m: 0.875rem; //14px
 $font-l: 1rem;     //16px
 $font-xl: 1.25rem; //20px
 $font-xxl: 3.18rem; //51px
-
+$font-banner: 36.06/16;
+$font-banner-preco: 74/16;
+$font-banner-preco-destaque: 147.52/16;
 /*----------------------------------------------------------------------------------------------------------*/
 * {
   margin: 0;
@@ -74,12 +79,7 @@ a{
 
 a[role= "button"]{
   border: 1px solid black;
-  border-top: 0;
-  font-size: $font-l + 0.1;
-}
-
-span{
-  font-size: $font-xxl;
+  height: 65px;
 }
 // --------------------------------------------classes----------------------------------------------------
 
@@ -91,12 +91,52 @@ span{
 }
 .banner-container{
   background-image: url('../images/banner-bg.png');
-  height: 379px;
   display: flex;
+  height: 379px;
 }
 // .containers-banner[role='bandito']{
 //   background-color: blue;
 // }
 .containers-banner{
+      font-family: $mont;
+}
+.containers-banner-a{
+    text-align: right;
+    padding-top: 4.9rem;
+        a[role= "button"]{
+          font-size: $font-l + 0.1;
+          padding: 24px 75px;
+          text-align: center;
+        }
+        p{
+          font-size: $font-xxl - 0.25;
+          font-weight: lighter;
+          height: auto;
+          margin-bottom: 2rem;
+        }
+        strong{
+          font-size: $font-xxl;
+          // padding-right: 5px;
+        }
+}
 
+.containers-banner-c{
+  padding-top: 6rem;
+  margin-left: -70px;
+        p{
+          font-size: #{$font-banner}+rem;
+          text-align: center;
+              strong{
+                font-size: #{$font-banner-preco}+rem;
+                line-height: 120px;;
+                font-family: $roboto;
+              }
+              .preco-cifrao{
+                vertical-align: 49px;
+              }
+              .preco-destaque{
+                font-size: #{$font-banner-preco-destaque}+rem;
+              }
+
+        }
 }
