@@ -75,7 +75,9 @@ a{
 
 a[role= "button"]{
   border: 1px solid black;
-  height: 65px;
+  font-size: #{(13/16)}+rem;
+  padding: 24px 75px;
+  text-align: center;
 }
 li{
   list-style: none;
@@ -101,9 +103,6 @@ li{
   display: flex;
   height: 379px;
 }
-// .containers-banner[role='bandito']{
-//   background-color: blue;
-// }
 .containers-banner{
       font-family: $mont;
 }
@@ -112,8 +111,6 @@ li{
     padding-top: 4.9rem;
         a[role= "button"]{
           font-size: $font-l + 0.1;
-          padding: 24px 75px;
-          text-align: center;
         }
         p{
           font-size: $font-xxl - 0.25;
@@ -180,4 +177,24 @@ li{
 
     }
 
+}
+.section-segments{
+  margin-top: 2rem;
+}
+.sections-segments-container{
+  display: flex;
+  margin: auto;
+  width: 78%;
+      .division{
+        width: 33.33%;
+        text-align: center;
+            .legend{
+              padding-top: 1rem;
+              padding-bottom: 1.5rem;
+              font-size: #{(22/16)}+rem;
+            }
+            a[role= "button"]{
+              padding: 19px 45px;
+            }
+      }
 }

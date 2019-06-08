@@ -64,7 +64,9 @@ a {
 
 a[role=button] {
   border: 1px solid black;
-  height: 65px;
+  font-size: 0.8125rem;
+  padding: 24px 75px;
+  text-align: center;
 }
 
 li {
@@ -104,8 +106,6 @@ li {
 }
 .containers-banner-a a[role=button] {
   font-size: 1.1rem;
-  padding: 24px 75px;
-  text-align: center;
 }
 .containers-banner-a p {
   font-size: 2.93rem;
@@ -169,6 +169,28 @@ li {
 }
 .icons-aside li strong {
   font-size: 17.09/16rem;
+}
+
+.section-segments {
+  margin-top: 2rem;
+}
+
+.sections-segments-container {
+  display: flex;
+  margin: auto;
+  width: 78%;
+}
+.sections-segments-container .division {
+  width: 33.33%;
+  text-align: center;
+}
+.sections-segments-container .division .legend {
+  padding-top: 1rem;
+  padding-bottom: 1.5rem;
+  font-size: 1.375rem;
+}
+.sections-segments-container .division a[role=button] {
+  padding: 19px 45px;
 }
 
 /*# sourceMappingURL=main.css.map */
