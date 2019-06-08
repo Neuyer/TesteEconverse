@@ -11,8 +11,9 @@
 body {
   font-family: "Roboto", sans-serif;
   font-size: 100%;
-  max-width: 1350px;
   margin: auto;
+  max-width: 1350px;
+  width: 100%;
 }
 
 header, nav {
@@ -20,24 +21,24 @@ header, nav {
   margin: auto;
 }
 
-header {
+.main-header {
   display: flex;
   font-size: 0.75rem;
   padding-top: 42.5px;
 }
-.containers-header header {
+.containers-header .main-header {
   box-sizing: border-box;
 }
-header :nth-child(2) {
+.main-header :nth-child(2) {
   text-align: center;
 }
-header :nth-child(3) {
+.main-header :nth-child(3) {
   text-align: right;
 }
-header :nth-child(3) :nth-child(1) {
+.main-header :nth-child(3) :nth-child(1) {
   margin-right: 4%;
 }
-header :nth-child(3) p {
+.main-header :nth-child(3) p {
   float: right;
   margin-left: 8%;
 }
@@ -50,11 +51,10 @@ nav {
 ul {
   display: flex;
 }
-ul :first-child {
-  text-align: left;
-}
-ul :last-of-type {
-  text-align: right;
+
+h1 {
+  text-indent: -5000px;
+  height: 0;
 }
 
 a {
@@ -71,6 +71,13 @@ a[role=button] {
 
 li {
   list-style: none;
+}
+
+.ul-main-nav :first-child {
+  text-align: left;
+}
+.ul-main-nav :last-of-type {
+  text-align: right;
 }
 
 .nav-li {
@@ -168,7 +175,7 @@ li {
   width: auto;
 }
 .icons-aside li strong {
-  font-size: 17.09/16rem;
+  font-size: 1.068125rem;
 }
 
 .section-segments {
@@ -191,6 +198,190 @@ li {
 }
 .sections-segments-container .division a[role=button] {
   padding: 19px 45px;
+}
+
+.brands-nav {
+  display: flex;
+  box-sizing: border-box;
+  margin-top: 5.5rem;
+}
+.brands-nav .brands-nav-control {
+  width: 5%;
+}
+.brands-nav .right-control {
+  text-align: right;
+}
+.brands-nav .brands-nav-ul {
+  width: 90%;
+}
+.brands-nav .brands-nav-ul li {
+  margin-left: 3.5%;
+}
+
+.news-header {
+  display: flex;
+  width: 78%;
+}
+.news-header .news-h2 {
+  font-size: 1.51875rem;
+}
+
+.news-header-ul {
+  padding-left: 49%;
+  border-bottom: 2px solid #808080;
+}
+
+.news-header-a {
+  font-size: 1rem;
+  padding: 0 1rem;
+  padding-bottom: 0.5rem;
+}
+
+#no-padding-right {
+  padding-right: 0;
+}
+
+.news-header-a:hover, .news-header-a:active {
+  font-weight: bold;
+  border-bottom: 3px solid black;
+}
+
+.news-nav {
+  display: flex;
+}
+.news-nav .news-nav-control {
+  margin-top: 19.5rem;
+}
+.news-nav .news-nav-items {
+  width: 33.33%;
+}
+.news-nav .news-nav-items figure {
+  text-align: center;
+}
+.news-nav .news-nav-items p {
+  font-size: 1.1875rem;
+  padding-left: 4rem;
+  letter-spacing: 0.1px;
+}
+.news-nav .news-nav-items span {
+  color: #808080;
+}
+.news-nav .news-nav-items .news-discount {
+  font-size: 0.878125rem;
+  position: relative;
+  top: -480px;
+  left: 225px;
+}
+
+.underwear-section-container {
+  display: flex;
+  margin: auto;
+  margin-top: 2.5rem;
+  width: 78%;
+}
+.underwear-section-container div {
+  height: 339px;
+}
+.underwear-section-container div ~ div {
+  margin-left: 2.7%;
+}
+
+.underwear-section-div a[role=button] {
+  border-width: 2px;
+  left: 195px;
+  position: relative;
+  top: -230px;
+  padding: 19px 45px;
+}
+
+.underwear-kit-text, .underwear-lingerie-text {
+  position: relative;
+  top: -267px;
+}
+
+.underwear-kit-text {
+  font-family: "Montserrat", sans-serif;
+  font-size: px-to rem(31.49);
+  font-weight: lighter;
+  left: -140px;
+  text-align: right;
+}
+.underwear-kit-text strong {
+  text-align: left;
+  font-size: 2.36875rem;
+  font-family: "Roboto", sans-serif;
+  font-weight: 1000;
+}
+.underwear-kit-text span {
+  font-size: 4.39rem;
+  font-weight: 600;
+}
+
+.underwear-lingerie-text {
+  font-size: 2.33375rem;
+  left: 110px;
+}
+.underwear-lingerie-text strong, .underwear-lingerie-text span {
+  font-size: 4.080625rem;
+}
+
+.about-article {
+  width: 78%;
+  margin: auto;
+  margin-top: 2.5rem;
+}
+.about-article h2 {
+  font-size: 2.278125rem;
+}
+.about-article hr {
+  float: right;
+  margin-top: -0.65rem;
+  width: 58%;
+}
+.about-article p {
+  font-size: 0.875rem;
+  font-family: "Montserrat", sans-serif;
+  padding-top: 2rem;
+}
+
+.promotions-form {
+  width: 78%;
+  margin: auto;
+  margin-top: 2rem;
+  box-sizing: border-box;
+  background-color: #f0f0f0;
+  font-size: 1.24625rem;
+  padding: 1.8rem 0 1.8rem 3rem;
+}
+.promotions-form strong {
+  margin-right: 2.6rem;
+}
+.promotions-form input[type=text] {
+  border: none;
+  border-top: 1px solid black;
+  border-left: 1px solid black;
+  color: #808080;
+  font-family: "Montserrat", sans-serif;
+  font-size: 1rem;
+  height: 43px;
+  padding-left: 1rem;
+  width: 37%;
+}
+.promotions-form input[type=submit] {
+  color: white;
+  background-color: black;
+  border: none;
+  font-size: 1rem;
+  padding: 0.8rem 2.5rem;
+  margin-left: -4px;
+}
+
+footer {
+  width: 78%;
+  margin: auto;
+  margin-top: 2rem;
+  height: 600px;
+  background-color: grey;
 }
 
 /*# sourceMappingURL=main.css.map */
