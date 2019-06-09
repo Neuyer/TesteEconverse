@@ -49,7 +49,7 @@ $font-banner-preco-destaque: 147.52/16;
 body{
   font-family: $roboto;
   font-size: 100%;
-  // margin: auto;
+  margin: auto;
   max-width: 1350px;
 }
 header, nav{
@@ -190,28 +190,30 @@ li{
 .icons-aside{
   height: 43px;
   margin-top: -2.6rem;
-    .ul-icons{
-      padding-left: 12.5%;
-        li~li{
-          margin-left: 14%;
-        }
-        & :nth-child(3){
-          margin-left: 15%;
-          margin-right: 3%;
-        }
-    }
-    li{
-      font-size: px-to-rem(12.8);
-      padding-top: 0.5rem;
-      text-align: left;
-      width: auto;
-        strong{
-          font-size: px-to-rem(17.09);
-        }
-
-    }
-
 }
+.ul-icons{
+  padding-left: 12%;
+}
+.icons-li{
+  display: inline-block;
+  font-size: px-to-rem(12.8);
+  padding-top: 0.5rem;
+  width: 14.5%;
+    strong{
+      font-size: px-to-rem(17.09);
+    }
+}
+.icons-b{
+  margin-left: 14%;
+}
+.icons-c{
+  margin-left: 13.5%;
+}
+.icons-d{
+  margin-left: 11%;
+}
+
+
 // -------------------------------------------------------SECTION-SEGMENTS----------------------
 .section-segments{
   margin-top: 2rem;
@@ -246,10 +248,10 @@ li{
     }
     .brands-nav-ul{
         width: 90%;
-        li{
-            margin-left: 3.5%;
-        }
     }
+}
+.brands-li{
+  margin-left: 3.5%;
 }
 
 // -----------------------------------------NEWS------------------------------------------
@@ -309,14 +311,13 @@ li{
   margin: auto;
   margin-top: 2.5rem;
   width: 78%;
-      div{
-        height: 339px;
-      }
-      div~div{
-        margin-left: 2.7%;
-      }
+}
+
+.under-div-b{
+  margin-left: 2.7%;
 }
 .underwear-section-div{
+  height: 339px;
     a[role="button"]{
       border-width: 2px;
       left: 195px;
@@ -496,4 +497,131 @@ footer{
         }
         margin-left: 10.9rem
       }
+}
+
+// ------------------------------@mediaqueries---------------------------------------
+@media only screen and (max-width: 1024px) {
+  .containers-banner-c{
+    width: 40%
+  }
+  .div-icons{
+    background-image: none;
+  }
+  .ul-icons{
+    padding-left: 0;
+  }
+  .icons-li{
+    width: 20%;
+    margin-left: 5%;
+  }
+  .sections-segments-container{
+    width: 100%;
+  }
+  .brands-li{
+    margin-left: 1%;
+  }
+  .news-header-ul{
+    padding-left: 30%;
+    border-bottom: 2px solid $cor-cinza;
+    margin-left: 2%;
+  }
+  .underwear-section-container{
+    flex-direction: column;
+  }
+  .underwear-section-div{
+    margin: auto;
+  }
+  .under-div-b{
+    margin-top: 1rem;
+  }
+}
+
+@media screen and (max-width: 376px){
+  .main-header{
+    flex-direction: column;
+    .containers-header{
+      width: 70%;
+      margin: auto;
+    }
+    .c-h-a{
+      display: none;
+    }
+    .c-h-c{
+      margin-top: 2rem;
+      padding-right: 3rem;
+    }
+  }
+  nav{
+    display: none;
+  }
+  .containers-banner-a{
+    p{
+      text-align: center;
+      width: 50%;
+      margin: 0;
+    }
+  }
+  .div-icons{
+    display: none;
+  }
+  .underwear-section-container{
+    margin:0;
+    width: 100%;
+  }
+  .underwear-section-div{
+    width:99%;
+
+  }
+  .containers-banner-c, .containers-banner-b{
+    display: none;
+  }
+  .news-section, .section-segments, .icons-aside{
+    display: none;
+  }
+  .promotions-form{
+    box-sizing: border-box;
+    flex-direction: column;
+    width: 100%;
+    padding: 1rem;
+    input[type= "text"]{
+      display: block;
+      margin: 2rem 0;
+      width: 95%;
+    }
+    input[type= "submit"]{
+      margin-left: 25%;
+    }
+  }
+  footer{
+    div{
+      flex-direction: column;
+    }
+  }
+  .table-container{
+    padding: 0;
+    padding-top: 1rem;
+  }
+  .footer-table{
+    td{
+      padding: 0;
+    }
+  }
+  .footer-container-mid{
+    display: none;
+  }
+  .footer-container-bottom{
+    margin: 0;
+    div{
+      height: 160px;
+      margin-top: 2rem;
+    }
+  }
+  .container-copyright{
+    .container-selos{
+      margin: 0;
+      margin-top: 2rem;
+      margin-bottom: 1rem;
+      text-align: center;
+    }
+  }
 }
