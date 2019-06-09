@@ -49,7 +49,7 @@ $font-banner-preco-destaque: 147.52/16;
 body{
   font-family: $roboto;
   font-size: 100%;
-  margin: auto;
+  // margin: auto;
   max-width: 1350px;
 }
 header, nav{
@@ -296,6 +296,7 @@ li{
           .news-discount{
             font-size: px-to-rem(14.05);
             position: relative;
+            width: 10px;
             top: -480px;
             left: 225px;
           }
